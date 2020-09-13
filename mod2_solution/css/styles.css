@@ -1,6 +1,8 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1{
@@ -9,63 +11,30 @@ h1{
   color: maroon;
 }
 
-#title1 {
-  position: relative;
-  top: 10%;
-  left: 30%;
+h2{
+  color: black;
+  font-size: 25%;
+  text-align: center;
   border: 1px solid black;
-  background-color: pink;
-  font-family: "Comic Sans MS", cursive, sans-serif
-}
-#title2 {
-  position: relative;
-  top: 10%;
-  left: 60%;
-  border: 1px solid black;
-  background-color: purple;
-  font-family: "Comic Sans MS", cursive, sans-serif
-}
-#title3 {
-  position: relative;
-  top: 10%;
-  left: 90%;
-  border: 1px solid black;
-  background-color: red;
-  font-family: "Comic Sans MS", cursive, sans-serif
+  width: 50px;
+  height: 30px;
+  background-color: gray;
+  float: right;
+  clear: right;
+  font-family: "Comic Sans MS", cursive, sans-serif; 
 }
 
-#chicken {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid black;
-  background-color: #8A2BE2;
-  margin-right: auto;
-  margin-left: auto ;
-  font-family: "Comic Sans MS", cursive, sans-serif
-  text-color: purple;
+p {
+    border: 1px solid black;
+    background-color: purple;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
-#beef {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid black;
-  background-color: #7FFF00;
-  margin-right: auto;
-  margin-left: auto ;
-  font-family: "Comic Sans MS", cursive, sans-serif
-  text-color: purple;
-}
-
-#sushi {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid black;
-  background-color: #DC143C;
-  margin-right: auto;
-  margin-left: auto ;
-  font-family: "Comic Sans MS", cursive, sans-serif
-  text-color: purple;
-}
 
 /* Simple Responsive Framework. */
 .row {
@@ -76,7 +45,7 @@ h1{
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    
+    border: 1px solid black;
   }
   .col-md-1 {
     width: 8.33%;
@@ -120,7 +89,7 @@ h1{
 @media (min-width: 768px) and (max-width: 991px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    
+    border: 1px solid black;
   }
   .col-sm-1 {
     width: 8.33%;
@@ -163,7 +132,7 @@ h1{
 @media (max-width: 767px) {
   .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
     float: left;
-  
+    border: 1px solid black;
   }
   .col-xs-1 {
     width: 8.33%;
