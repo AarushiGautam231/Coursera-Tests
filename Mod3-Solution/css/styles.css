@@ -1,0 +1,132 @@
+/** custom styles **/
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #5c0139;
+	font-family: "Comic Sans MS", cursive, sans-serif;;
+}
+
+/* Header */
+#header-nav {
+	background-color: #b57777;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand {
+	padding-top: 20px;
+}
+.navbar-brand h1 { /*Restaurant name*/
+	font-family: 'Bowlby One SC', cursive;
+	color: #1a0d15;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #1a0d15;
+	text-align: center;
+}
+#nav-list a:hover {
+	background : #fad9d9;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 2px solid #170303;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top: -30px
+}
+/* End Header */
+
+/*Main Content*/
+h2 {
+	font-size: 1.6em;
+	color: #fae1e1;
+	font-weight: bold;
+}
+
+.row{
+  width: 100%;
+}
+
+.item {
+	height: 2000px;
+	background-color: #ba9393;
+	margin: 10px;
+  	padding: 15px;
+}
+.item h3 {
+	font-size: 1.4em;
+	text-align: center;
+	color: #1a0d15;
+	font-weight: bold;
+	margin-top: .2%;
+}
+.item p {
+	color: #1a0d15;
+	margin-top: 5%;
+  	text-align: justify;
+  	font-size: 100%;
+  	font-style: italic;
+}
+
+.item a {
+	color: #000000;
+	font-weight: bold;
+}
+/*End Main Content*/
+
+/******* Medium Devices ~ Desktop only *******/
+@media (min-width: 992px) {
+	.item {
+		position: relative;
+		height: 1000px;
+	}
+	.item p {
+		font-size: 1.35vw;
+		line-height: 1;
+	}
+}
+
+/******* Small Devices ~ Tablet only *******/
+@media (min-width: 768px) and (max-width: 991px)  {
+	.item {
+		position: relative;
+		height: 975px;
+	}
+	.item p {
+		line-height: 1.2;
+	}
+
+}
+
+/******* Extra small Devices ~ Mobile only *******/
+@media (max-width: 767px) {
+	/* Header */
+	.navbar-brand {
+		height: 60px;
+	}
+	.navbar-brand h1 { /*Page name*/
+		padding-top: 10px;
+		font-size: 5vw; /* 1vw = 1% of viewport width*/
+	}
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+	/* End Header */
+	.item {
+		position: relative;
+		height: 650px;
+	}
+	.item p {
+		line-height: 1.1;
+	}
+}
